@@ -1,0 +1,151 @@
+<div style="font-family:Arial,sans-serif;max-width:900px;margin:auto;background:#fff">
+
+  <!-- FREE AI TOOLS BOX -->
+  <div style="background:#f0f7ff;border:2px solid #1877F2;border-radius:12px;padding:20px;text-align:center;margin:20px 0;">
+    <h2 style="color:#0a3d8a;margin:0 0 15px 0;">🛠️ Free AI Tools - 100% Free, No API Key</h2>
+    <input id="topic" type="text" placeholder="Topic likho: GBOB, Guest Posting..." style="width:100%;padding:12px;border:2px solid #ccc;border-radius:8px;font-size:15px;box-sizing:border-box;">
+    <button onclick="gen()" style="width:100%;margin-top:12px;background:#1877F2;color:white;border:none;padding:12px;border-radius:8px;font-weight:bold;font-size:16px;cursor:pointer;">Generate AI Article</button>
+    <div id="out" style="display:none;margin-top:15px;background:white;padding:15px;border-radius:8px;text-align:left;font-size:14px;line-height:1.6;border:1px solid #ddd;white-space:pre-wrap;"></div>
+  </div>
+
+  <!-- 3 SERVICES -->
+  <div style="display:flex;gap:12px;flex-wrap:wrap;margin:20px 0;">
+    <div style="flex:1;min-width:200px;border:1px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;">
+      <h3 style="margin:5px 0;color:#0a3d8a;">🌍 Guest Posting</h3>
+      <p style="font-size:13px;color:#555;margin:5px 0;">500+ High DA Sites DA 50-90</p>
+      <a href="mailto:rananisar943@gmail.com" style="background:#25D366;color:white;padding:8px 15px;border-radius:6px;text-decoration:none;font-size:13px;display:inline-block;margin-top:5px;">WhatsApp Order</a>
+    </div>
+    <div style="flex:1;min-width:200px;border:1px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;">
+      <h3 style="margin:5px 0;color:#0a3d8a;">📍 GBOB Expert</h3>
+      <p style="font-size:13px;color:#555;margin:5px 0;">Rank Your Business in 7 Days</p>
+      <a href="mailto:rananisar943@gmail.com" style="background:#1877F2;color:white;padding:8px 15px;border-radius:6px;text-decoration:none;font-size:13px;display:inline-block;margin-top:5px;">Contact Now</a>
+    </div>
+    <div style="flex:1;min-width:200px;border:1px solid #e0e0e0;border-radius:10px;padding:15px;text-align:center;">
+      <h3 style="margin:5px 0;color:#0a3d8a;">🤖 AI Writer</h3>
+      <p style="font-size:13px;color:#555;margin:5px 0;">SEO Articles, Titles Free</p>
+      <a href="#tools" style="background:#0a3d8a;color:white;padding:8px 15px;border-radius:6px;text-decoration:none;font-size:13px;display:inline-block;margin-top:5px;">Use Free</a>
+    </div>
+  </div>
+
+  <!-- LEGAL FOR META - MOST IMPORTANT -->
+  <div style="background:#f8f9fa;padding:20px;border-radius:12px;margin-top:20px;">
+    <h3 style="color:#0a3d8a;border-left:4px solid #1877F2;padding-left:8px;">About Us</h3>
+    <p style="font-size:13px;line-height:1.7;">Nisar AI Studio based in Pindi Bhattian, Hafizabad, Punjab, Pakistan. We provide Guest Posting on 500+ authority sites, GBOB (Google Business Profile) Optimization, Free AI Tools, SEO Writing. Email: rananisar943@gmail.com. Location: Pindi Bhattian.</p>
+
+    <h3 style="color:#0a3d8a;border-left:4px solid #1877F2;padding-left:8px;margin-top:25px;">Privacy Policy - Last Updated Oct 18, 2026</h3>
+    <p style="font-size:13px;line-height:1.7;">Nisar AI Studio (rananisar943@gmail.com) collects Name, Email via Facebook Login only to provide AI Tools services. We do NOT sell data. Data stored securely on Google. You can request deletion anytime via rananisar943@gmail.com within 7 days. App: Nisar AI Studio. Domain: sites.google.com/view/nisaraistudio. Contact: rananisar943@gmail.com, Pindi Bhattian, Pakistan.</p>
+
+    <h3 style="color:#0a3d8a;border-left:4px solid #1877F2;padding-left:8px;margin-top:25px;">Terms of Service</h3>
+    <p style="font-size:13px;line-height:1.7;">By using Nisar AI Studio you agree to terms. Services as-is. Guest Posting/GBOB payments via WhatsApp/Email. No spam. Refund within 7 days if service not delivered. Contact: rananisar943@gmail.com</p>
+
+    <h3 style="color:#0a3d8a;border-left:4px solid #1877F2;padding-left:8px;margin-top:25px;">Data Deletion Instructions (For Meta)</h3>
+    <div style="background:white;border:2px dashed #1877F2;padding:12px;border-radius:8px;font-size:13px;line-height:1.6;">
+      <b>To Delete Your Data from Nisar AI Studio:</b><br>
+      1. Email us at <b>rananisar943@gmail.com</b> with subject "Delete My Data"<br>
+      2. Mention your Facebook Name & Email<br>
+      3. We will delete all data within 7 working days and email confirmation.<br><br>
+      <b>Alternate:</b> Facebook > Settings > Apps and Websites > Nisar AI Studio > Remove<br>
+      <b>Contact:</b> rananisar943@gmail.com | Pindi Bhattian, Hafizabad, PK
+    </div>
+  </div>
+
+  <div style="background:#0a3d8a;color:white;text-align:center;padding:15px;border-radius:10px;margin-top:20px;font-size:12px;">
+    © 2026 Nisar AI Studio | rananisar943@gmail.com | Pindi Bhattian, Pakistan<br>
+    Privacy | Terms | Data Deletion | About
+  </div>
+
+</div>
+
+<script>
+function gen(){
+  var t=document.getElementById('topic').value;
+  if(!t){alert('Topic likho bhai!');return;}
+  var o=document.getElementById('out');
+  o.style.display='block';
+  o.innerText="AI Generated Article for: "+t+"\n\nNisar AI Studio provides best "+t+" services in Pakistan. We are GBOB Expert and Guest Posting provider based in Pindi Bhattian.\n\nOur Services:\n- 500+ High DA Guest Posting (DA 50-90)\n- GBOB Business Rank in 7 Days\n- Free AI Tools No API Key\n- SEO Writing\n\nWhy Choose Us? 100% White Hat, Fast Delivery, Affordable.\n\nContact: rananisar943@gmail.com\nLocation: Pindi Bhattian, Hafizabad, Pakistan\n\n--- Generated by Nisar AI Studio ---";
+}
+</script><div style="font-family: 'Lato', Arial, sans-serif; max-width:100%; margin:0 auto; background:#ffffff; border-radius:16px; overflow:hidden; box-shadow:0 4px 20px rgba(0,0,0,0.1)">
+  
+  <!-- HEADER -->
+  <div style="background: linear-gradient(135deg, #0a3d8a 0%, #1877F2 100%); color:white; padding:40px 20px; text-align:center;">
+    <div style="font-size:60px; font-weight:900; border:3px solid white; display:inline-block; width:80px; height:80px; line-height:80px; border-radius:12px;">N</div>
+    <h1 style="margin:15px 0 5px 0; font-size:28px;">Nisar AI Studio</h1>
+    <p style="margin:0; font-size:16px; opacity:0.9;">Free AI Tools + GBOB Expert + Guest Posting</p>
+    <p style="margin:10px 0 0 0; font-size:14px; background:rgba(255,255,255,0.2); display:inline-block; padding:6px 15px; border-radius:20px;">📍 Pindi Bhattian, Hafizabad | 📧 rananisar943@gmail.com</p>
+  </div>
+
+  <!-- AI TOOLS DEMO -->
+  <div style="padding:30px 20px; background:#f0f7ff;">
+    <h2 style="text-align:center; color:#0a3d8a; margin:0 0 20px 0;">🛠️ Free AI Tools - 100% Free, No API Key</h2>
+    <div style="background:white; padding:20px; border-radius:12px; border:2px solid #1877F2;">
+      <input id="topic" type="text" placeholder="Topic likho: jaise GBOB, Guest Posting..." style="width:100%; padding:14px; border:2px solid #ddd; border-radius:8px; font-size:16px; box-sizing:border-box;">
+      <button onclick="generate()" style="width:100%; margin-top:12px; background:#1877F2; color:white; border:none; padding:14px; border-radius:8px; font-size:16px; font-weight:bold; cursor:pointer;">Generate AI Article Now</button>
+      <div id="result" style="margin-top:15px; padding:15px; background:#f9f9f9; border-radius:8px; display:none; white-space:pre-wrap; font-size:14px; line-height:1.6;"></div>
+    </div>
+  </div>
+
+  <!-- 3 SERVICES -->
+  <div style="display:flex; flex-wrap:wrap; gap:15px; padding:25px 20px; background:white;">
+    <div style="flex:1; min-width:250px; border:2px solid #e8f0fe; border-radius:12px; padding:20px; text-align:center;">
+      <div style="font-size:40px;">🌍</div>
+      <h3 style="color:#0a3d8a; margin:10px 0;">Guest Posting</h3>
+      <p style="font-size:14px; color:#555;">500+ High DA 50-90 Sites Available. Fast Indexing.</p>
+      <a href="https://wa.me/923000000000" style="display:inline-block; background:#25D366; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Order on WhatsApp</a>
+    </div>
+    <div style="flex:1; min-width:250px; border:2px solid #e8f0fe; border-radius:12px; padding:20px; text-align:center;">
+      <div style="font-size:40px;">📍</div>
+      <h3 style="color:#0a3d8a; margin:10px 0;">GBOB Expert</h3>
+      <p style="font-size:14px; color:#555;">Google Business Profile Rank in 7 Days. Full Optimization.</p>
+      <a href="mailto:rananisar943@gmail.com" style="display:inline-block; background:#1877F2; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Contact Now</a>
+    </div>
+    <div style="flex:1; min-width:250px; border:2px solid #e8f0fe; border-radius:12px; padding:20px; text-align:center;">
+      <div style="font-size:40px;">🤖</div>
+      <h3 style="color:#0a3d8a; margin:10px 0;">AI Writer</h3>
+      <p style="font-size:14px; color:#555;">SEO Articles, Titles, Hashtags - 100% Free Tool.</p>
+      <a href="#tools" style="display:inline-block; background:#0a3d8a; color:white; padding:10px 20px; border-radius:8px; text-decoration:none; font-weight:bold;">Use Free</a>
+    </div>
+  </div>
+
+  <!-- LEGAL PAGES FOR META -->
+  <div style="padding:25px 20px; background:#f8fafc;">
+    <h2 style="color:#0a3d8a; border-left:4px solid #1877F2; padding-left:10px;">About Us</h2>
+    <p style="font-size:14px; line-height:1.7; color:#333;">Nisar AI Studio is based in Pindi Bhattian, Hafizabad, Punjab, Pakistan. We provide Guest Posting Services on 500+ Authority Sites, Google Business Profile (GBOB) Optimization, Free AI Tools, SEO Content Writing and Website Builder Services. Contact: rananisar943@gmail.com. Location: Pindi Bhattian, Hafizabad.</p>
+
+    <h2 style="color:#0a3d8a; border-left:4px solid #1877F2; padding-left:10px; margin-top:30px;">Privacy Policy</h2>
+    <p style="font-size:13px; line-height:1.7; color:#333;"><b>Last Updated: Oct 18, 2026</b><br>We at Nisar AI Studio (rananisar943@gmail.com) collect Name, Email via Facebook Login only to provide our AI Tools and Services. We do NOT sell your data. Data stored securely. You can request data deletion anytime by emailing rananisar943@gmail.com. We will delete within 7 working days. App Domain: sites.google.com. Site URL: https://sites.google.com/view/nisaraistudio</p>
+
+    <h2 style="color:#0a3d8a; border-left:4px solid #1877F2; padding-left:10px; margin-top:30px;">Terms of Service</h2>
+    <p style="font-size:13px; line-height:1.7; color:#333;">By using Nisar AI Studio you agree to our terms. Services are provided as-is. Payments for Guest Posting/GBOB via WhatsApp. No spam. Refund policy: within 7 days if service not delivered. Contact: rananisar943@gmail.com, Pindi Bhattian, Pakistan.</p>
+
+    <h2 style="color:#0a3d8a; border-left:4px solid #1877F2; padding-left:10px; margin-top:30px;">Data Deletion Instructions</h2>
+    <div style="background:white; border:2px dashed #1877F2; padding:15px; border-radius:8px; font-size:13px;">
+      <b>How to Delete Your Data from Nisar AI Studio:</b><br>
+      1. Email us at <b>rananisar943@gmail.com</b> with Subject: "Delete My Data"<br>
+      2. Include your Facebook Name and Email<br>
+      3. We will delete all your data within 7 working days and confirm via email.<br><br>
+      <b>Alternative:</b> Facebook > Settings > Apps and Websites > Find "Nisar AI Studio" > Remove<br>
+      <b>Contact:</b> rananisar943@gmail.com | Pindi Bhattian, Hafizabad
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="background:#0a3d8a; color:white; padding:20px; text-align:center; font-size:13px;">
+    © 2026 Nisar AI Studio | rananisar943@gmail.com | Pindi Bhattian, Hafizabad, Pakistan<br>
+    <div style="margin-top:8px;">
+      <a href="#" style="color:#a8c6ff; text-decoration:none; margin:0 5px;">Privacy</a> | 
+      <a href="#" style="color:#a8c6ff; text-decoration:none; margin:0 5px;">Terms</a> | 
+      <a href="#" style="color:#a8c6ff; text-decoration:none; margin:0 5px;">Data Deletion</a> | 
+      <a href="#" style="color:#a8c6ff; text-decoration:none; margin:0 5px;">About</a>
+    </div>
+  </div>
+</div>
+
+<script>
+function generate(){
+  var t = document.getElementById('topic').value;
+  if(!t){ alert('Topic likho bhai!'); return; }
+  var r = document.getElementById('result');
+  r.style.display='block';
+  r.innerHTML = "Generating AI Article for: " + t + "...\n\n✅ Nisar AI Studio Provides Best " + t + " Services in Pakistan.\n\nWe are GBOB Expert and Guest Posting Service Provider based in Pindi Bhattian, Hafizabad.\n\nOur Services:\n• High DA Guest Posting (DA 50-90)\n• GBOB Google Business Optimization\n• Free AI Tools - No API Key\n• SEO Content Writing\n\nWhy Choose Us?\n- 100% White Hat SEO\n- Fast Delivery\n- Affordable Price\n- Support: rananisar943@gmail.com\n\nContact Now for " + t + " Services!\nEmail: rananisar943@gmail.com\nLocation: Pindi Bhattian, Pakistan";
+}
+</script>
